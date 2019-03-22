@@ -19,8 +19,9 @@ android {
 }
 
 dependencies {
-//    implementation project(":authlibrary")
-    implementation(name:'authlibrary-debug', ext:'aar')
+    implementation project(":authlibrary")
+//    implementation(name:'authlibrary-debug', ext:'aar')
+//    implementation 'com.github.hiral101:AuthSdk:0.1.0'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
